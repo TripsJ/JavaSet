@@ -13,4 +13,13 @@ public class EntryFinder {
             }
         }
     }
+
+    void valueConverter(float rate,List<Trademodel>l){
+        for (Trademodel t : l){
+            if (Objects.equals(t.getMeasure(), "$")){
+                float eurovalue = (float)Integer.parseInt(t.getValue())*rate;
+                System.out.println("€ "+ eurovalue);
+            }
+        }
+    }
 }
