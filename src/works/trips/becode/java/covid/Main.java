@@ -10,7 +10,7 @@ public class Main {
         //System.out.println(l);
         System.out.println("Done");
 
-        for (Trademodel t:l
+        /*for (Trademodel t:l
              ) {
             System.out.println();
             System.out.println("#########################");
@@ -24,8 +24,10 @@ public class Main {
             System.out.println(t.getYear());
 
 
-        }
+        }*/
         UniqueFinder finder = new UniqueFinder();
         System.out.println(finder.uniquesCommodity(l));
+        EntryFinder efinder = new EntryFinder();
+        efinder.entryfinder(l,"All");
     }
 }
