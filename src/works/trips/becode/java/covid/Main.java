@@ -1,7 +1,6 @@
 package works.trips.becode.java.covid;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,5 +29,19 @@ public class Main {
         EntryFinder efinder = new EntryFinder();
         efinder.entryfinder(l,"All");
         efinder.valueConverter(0.85f,l);
+        CsvToMap mapmaker = new CsvToMap("effects-of-covid-19-on-trade-at-21-July-2021-provisional.csv");
+        //Returns a list of Hashmaps
+        List<Map<String, String>> dict = mapmaker.mapFile();
+        List<Integer> val = new ArrayList<Integer>();
+        for(Map<String,String> e :dict){
+
+            if(e.get("Direction").equals("Imports")&&e.get("Country").equals("All")&&e.get("Transport_Mode").equals("All")){
+                    val.add(Integer.parseInt(e.get("Value")));
+
+                }
+            }
+        Collections.sort(val);
+        System.out.println( val);
+        }
     }
-}
+

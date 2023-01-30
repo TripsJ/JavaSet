@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5c597ef-2306-435c-a5ab-2266cd710982" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/works/trips/becode/java/covid/CsvToMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/works/trips/becode/java/covid/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/works/trips/becode/java/covid/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +64,7 @@
       <workItem from="1674998922551" duration="173000" />
       <workItem from="1674999233199" duration="2954000" />
       <workItem from="1675066795217" duration="239000" />
+      <workItem from="1675067694042" duration="9472000" />
     </task>
     <servers />
   </component>
