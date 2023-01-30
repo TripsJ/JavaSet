@@ -33,15 +33,24 @@ public class Main {
         //Returns a list of Hashmaps
         List<Map<String, String>> dict = mapmaker.mapFile();
         List<Integer> val = new ArrayList<Integer>();
+        List<Integer>exval= new ArrayList<Integer>();
         for(Map<String,String> e :dict){
 
             if(e.get("Direction").equals("Imports")&&e.get("Country").equals("All")&&e.get("Transport_Mode").equals("All")){
                     val.add(Integer.parseInt(e.get("Value")));
 
-                }
+                } else if (e.get("Direction").equals("Exports")&&e.get("Country").equals("China")&&e.get("Transport_Mode").equals("All")){
+                exval.add(Integer.parseInt(e.get("Value")));
+
+            }
+
             }
         Collections.sort(val);
         System.out.println( val);
+        Collections.sort(exval);
+        System.out.println(exval.get(exval.size()-1));
         }
-    }
+
+        }
+
 
